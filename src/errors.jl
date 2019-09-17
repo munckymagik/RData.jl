@@ -9,3 +9,5 @@ struct CodecMissingError <: RDataException
       "\"using Codec$formatName\" before \"using RData\"."
     ))
 end
+
+Base.showerror(io::IO, e::CodecMissingError) = print(io, "CodecMissingError: $(e.msg)")
