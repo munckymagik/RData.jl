@@ -6,6 +6,7 @@ import DataFrames: identifier
 export
     sexp2julia,
     DictoVec,
+    RDataException,
     CodecMissingError,
     load # reexport FileIO.load()
 
